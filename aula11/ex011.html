@@ -10,14 +10,16 @@
     <h1>Países</h1>
     Em que país você vive <input type="text" id="txtpaís">
     <input type="button" value="Verificar" onclick="verificar()">
-    <div id="res">
+    <div >
+        <p id="res">
 
+        </p>
     </div>
     <script>
         function verificar() {
-            var país = window.document.querySelector('input#txtpaís')
-            var res = window.document.querySelector('div#res')
-            if (país = Brasil) {
+            var pais = window.document.querySelector('input#txtpaís')
+            var res = window.document.querySelector('p#res')
+            if (pais = Brasil) {
                 res.innerHTML = `<p>Você é Brasileiro</p>`
             } else {
                 res.innerHTML = `<p>Você é estrangeiro</p>`
